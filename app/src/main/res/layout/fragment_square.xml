@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SquareFragment">
+
+    <ScrollView
+        android:id="@+id/scroll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="40dp"
+        android:background="#ffffff"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/second_layout_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama_bangun_persegi"
+                android:orientation="horizontal"
+
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/hasil_jenis_persegi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#B2DFDB"
+                    android:padding="12dp"
+                    android:text="@string/result_nama_segitiga"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/nama_bangun_persegi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/square"
+                android:layout_marginTop="32dp"
+                android:padding="12dp"
+                android:text="@string/nama_persegi"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/button_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/second_layout_wrapper"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/calculate_luas_persegi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center_horizontal"
+                    android:padding="16dp"
+                    android:text="@string/calculation_luas_text"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/calculate_keliling_persegi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center_horizontal"
+                    android:padding="16dp"
+                    android:text="@string/calculation_keliling_text"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hasil_perhitungan_persegi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_wrapper"
+                android:layout_marginTop="32dp"
+                android:background="#B2DFDB"
+                android:padding="12dp"
+                android:text="@string/hasil"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:id="@+id/age_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hasil_perhitungan_persegi">
+
+                <TableRow android:padding="24dp">
+
+                    <TextView
+                        android:id="@+id/rumus"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:gravity="center|center_horizontal"
+                        android:text="@string/rumus"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/hasil_rumus_persegi"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center_horizontal"
+                        android:text="@string/rumus_output"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/square"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="75dp"
+                android:gravity="center|center_horizontal"
+                android:src="@mipmap/ic_square_foreground"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/sisi1_persegi"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/square"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="75dp"
+                android:layout_marginBottom="34dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="@string/rumus_output" />
+
+            <EditText
+                android:id="@+id/sisi2_persegi"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/square"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="145dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginEnd="149dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="@string/rumus_output"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

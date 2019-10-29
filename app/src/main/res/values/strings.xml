@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Bangun Datar</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello!</string>
+    <string name="slide_1_desc">The easiest way to calculate two-dimensional figure!</string>
+
+    <string name="slide_2_title">Simple</string>
+    <string name="slide_2_desc">You can calculate wide and round!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="nama_segitiga">Nama (jenis) segitiga</string>
+    <string name="result_nama_segitiga" />
+    <string name="calculation_luas_text">Hitung luas</string>
+    <string name="calculation_keliling_text">Hitung keliling</string>
+    <string name="hasil" />
+    <string name="rumus">Rumus:</string>
+    <string name="rumus_output" />
+    <string name="nama_persegi">Nama (jenis)</string>
+</resources>

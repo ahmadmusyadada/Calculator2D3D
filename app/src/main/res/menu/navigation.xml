@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_triangle"
+        android:title="Triangle"
+        android:icon="@drawable/ic_triangle_background" />
+    <item android:id="@+id/action_square"
+        android:title="Square"
+        android:icon="@drawable/ic_square_background" />
+</menu>
